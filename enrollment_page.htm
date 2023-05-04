@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME: NVC Enrollment Website</title>
+        <link rel="stylesheet" href="enrollment_form.css">
+    </head>
+    <body>
+        <header>
+            <ul class="Logo">
+                <li class="l1" title="Kalibo, Aklan">
+                    <a href="https://nvc.edu.ph" target="_blank">
+                    <img src="old scripts/new old scripts/final-logo-nvc.png" 
+                    alt="Northwestern Visayan Colledges">
+                    </a>
+                </li>
+            </ul>  
+        </header>
+        <div class="container">
+            <h2>Enrollment Form</h2>
+            <form action="processForm.php" method="post" id="form">
+                <div class="student_info" id="student_info">
+                    <h3>Student's Information</h3>
+                    <div class="yn">
+                        <label for="strand">Strand</label>
+                          <select name="strand" id="strand">
+                              <option value="HUMSS">HUMSS</option>
+                              <option value="STEM">STEM</option>
+                              <option value="GAS" selected >GAS</option>
+                              <option value="ABM">ABM</option>
+                              <option value="ICT">ICT</option>
+                              <option value="HE">HE</option>
+                          </select>
+                    </div>
+                    <div class="yn">
+                        <label for="yl">Grade Level</label>
+                        <select name="yl" id="yl">
+                            <option value="11" selected >11</option>
+                            <option value="12" >12</option>
+                        </select>
+                    </div>
+                    <div id="ln1">
+                        <label for="sem">Sem:</label>
+                        <select name="sem" id="sem">
+                            <option value="1" selected >1st</option>
+                            <option value="2">2nd</option>
+                        </select><br>
+                        <label for="sy">S.Y.:</label>
+                        <input type="text" id="sy" name="sy" maxlength="9" required><br>
+                    </div>
+                    <div id="ln2">
+                        <div class="yn">
+                            <label for="stype">Student Type</label>
+                            <select name="stype" id="stype">
+                                <option value="old">Old Student</option>
+                                <option value="new" selected >New Student</option>
+                             </select> 
+                        </div>
+                        <input type="text" id="IDno" name="IDno" required><br>
+                        <label for="IDno"> School ID No.</label>
+                    </div>
+                    <div id="ln3">
+                        <input type="number" id="lrn" name="lrn" max="1000000000000" required>
+                        <label for="lrn">Learners Reference No.</label>
+                        <input type="text" id="fbus" name="fbus" required>
+                        <label for="fbus">Facebook User Name</label>
+                    </div>
+                    <div class="name">
+                       <input type="text" id="name" name="name"  placeholder="ex. Dela Cruz, John Loyd Bonus" required>
+                      <label for="name">Student Name</label>
+                    </div>
+                    <div id="ln4">
+                        <input type="date" id="DoB" name="dob" required>
+                        <label for="DoB">Date of Birth</label>
+                        <input type="number" id="age" name="age" min="0" max="99" required>
+                        <label for="age">Age</label>
+                        <select id="sex" name="sex">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <label for="sex">Sex</label>
+                        <input type="tel" id="num" name="num" required><br>
+                        <label for="num">Mobile No:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="address" name="address" required>
+                        <label for="address">Place of Birth:</label>
+                        <input type="number" id="zipcode" name="zipcode">
+                        <label for="zipcode">Zip Code:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="yn">
+                        <label for="4ps">4P's Beneficiary</label>
+                        <select name="4ps" id="4ps">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select><br>
+                    </div>
+                    <div class="yn">
+                        <label for="IPmem">IP Member</label>
+                        <select name="IPmem" id="IPmem">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select><br>
+                    </div>
+                    <div id="prev_schools">
+                        <input type="text" id="elementary" name="elementary" required>
+                        <label for="elementary">Elementary:</label>
+                        <input type="text" id="sy2" name="sy2" maxlength="9" required>
+                        <label for="sy2" class="SY">S.Y.:</label>
+                        <input type="text" id="jhs" name="jhs" required>
+                        <label for="jhs">Junior High School:</label>
+                        <input type="text" id="sy3" name="sy3" maxlength="9" required>
+                        <label for="sy3" class="SY">S.Y.:</label>
+                        <input type="text" id="shs" name="shs" required>
+                        <label for="shs">Senior High School:</label>
+                        <input type="text" id="sy4" name="sy4" maxlength="9" required>
+                        <label for="sy4" class="SY">S.Y.:</label>
+                    </div>
+                    <button type="button" id="next2">Next</button>
+                </div>
+                <div class="VacnF" id="VacnF">
+                    <div class="Vaccination">
+                       <h3>Vaccination Data</h3>         
+                        <div class="cb">
+                            <label for="vac">Vaccinated</label>
+                            <input type="checkbox" name="vac" id="vac">
+                            <br>
+                        </div>
+                        <div class="cb" id="vaccb">
+                            <input type="checkbox" name="dose1" id="dose1">
+                            <label for="dose1">1st Dose</label><br>
+                            <input type="checkbox" name="dose2" id="dose2">
+                            <label for="dose2">2nd Dose</label><br>
+                            <input type="checkbox" name="booster" id="booster"> 
+                            <label for="booster">Booster</label> <br>
+                        </div>
+                        <input type="text" id="vacname" name="vacname"><br>
+                        <label for="vacname">Vaccine</label>
+                    </div>
+                    <div class="fam">
+                        <h3>Parent's Information</h3>
+                        <input type="text" id="dad_name" name="dad_name"  placeholder="ex. Dela Cruz, John Loyd Bonus">
+                        <label for="dad_name">Father's Name</label>
+                        <input type="text" id="dad_job" name="dad_job">
+                        <label for="dad_job">Occupation</label>
+                        <input type="tel" id="dad_num" name="dad_num"><br>
+                        <label for="dad_num">Mobile No:</label>
+                        <input type="number" id="dad_sal" name="dad_sal" min="0">
+                        <label for="dad_sal">Monthly Income</label>
+
+                        <input type="text" id="mom_name" name="mom_name"  placeholder="ex. Geronimo, Sarah Bernardo">
+                        <label for="mom_name">Mother's  Maiden Name</label>
+                        <input type="text" id="mom_job" name="mom_job">
+                        <label for="mom_job">Occupation</label>
+                        <input type="tel" id="mom_num" name="mom_num"><br>
+                        <label for="mom_num">Mobile No:</label>
+                        <input type="number" id="mom_sal" name="mom_sal" min="0">
+                        <label for="mom_sal">Monthly Income</label>
+                    </div>
+                    <button type="button" id="back2">Back</button>
+                    <button type="submit" id="btnsubmit">Submit</button>
+                </div>
+            </form>
+        </div>
+    <script>
+        var Form = document.getElementById("form");
+        var Form1 = document.getElementById("student_info");
+        var Form2 = document.getElementById("VacnF") ;
+
+        var Next1 = document.getElementById("next2");
+        var Back1 = document.getElementById("back2");
+        var VtnSubmit = document.getElementById("btnsubmit");
+
+        Next1.onclick = function(){
+            Form1.style.display = "none";
+            Form1.style.visibility = "hidden";
+            Form2.style.display = "unset";
+            Form2.style.visibility = "visible";
+        }
+        Back1.onclick = function(){
+            Form1.style.display = "unset";
+            Form1.style.visibility = "visible";
+            Form2.style.display = "none";
+            Form2.style.visibility = "hidden";
+        }
+        VtnSubmit.onclick = function(){
+            Form.submit();
+        }
+    </script>
+    </body>
+</html>

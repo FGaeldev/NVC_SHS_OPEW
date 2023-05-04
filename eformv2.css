@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul.Logo{
+    overflow-y: hidden;
+    background-color: #bc3329;
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+}
+ ul.Logo li{
+    display: inline-block;
+    text-align:left;
+    vertical-align: middle;
+}
+ul.Logo li a img{
+    height: 50px;
+}
+.biggercont{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    border: solid black 2px;
+    border-radius: 10px;
+    min-width: 20em;
+    max-width: 75%;
+}
+.container{
+    text-align: left;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    max-width: 1000px;
+    max-height: fit-content;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.form{
+    display: none;
+    min-width: 300px;
+}
+h2{
+    margin-top: 3px;
+    margin-left: 5px;
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: black;
+}
+label{
+    display: block;
+    margin: 0;
+    margin-bottom: 1em;
+}
+input{
+    background: transparent;
+    width: max-content;
+    border-bottom: solid 1px black;
+}
+button{
+    padding-right: 10px;
+    border: none;
+    font-size: large;
+}
+button:hover{
+    color: blue;
+}
+.docs{
+    margin-top: 5em;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+}
+.docs form{
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 2px maroon;
+    border-radius: 6px; 
+    margin-bottom: 1em;
+    width: min-content;
+}
+.docs input, .docs label, .docs p{
+    margin-bottom: 0;
+    margin-left: 1em;
+}
+div#bday input,div#bday label{
+    display: inline-block;
+}
+div#bday input[type="number"]{
+    max-width: 4em;
+}
+.container form{
+    width:min-content ;
+    margin-right: auto;
+    margin-left: auto;
+}
+p.limits{
+    font-size: small;
+}
+#ln1 label{
+    display: inline-block;
+}
+#ln4 :first-child{
+    margin-top: 1em;
+}
+input[type="text"], input[type="email"]{
+    width: 19em;
+}
+input[type="radio"]+label{
+    display: inline-block;
+    margin: .5em;
+}
+input[type="file"]{
+   width: auto;
+}
+input[type="checkbox"]{
+    display: inline-block;
+}
+div.yn label{
+    display: inline-block;
+}
+div.cb label{
+    display: inline-block;
+}
+div#ln2 div.yn label{
+    margin:0 ;
+    display: inline-block;
+}
+div#ln2 div.yn select{
+    margin-bottom: 1em;
+}
+div#ln1 input[type="text"]{
+    width: 7em;
+}

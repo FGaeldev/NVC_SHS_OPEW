@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENROLLMENT FORM: NVC Enrollment Website</title>
+        <link rel="stylesheet" href="eformv4.css">
+        <script src="jquery3.6.4.js"></script>
+    </head>
+    <body>
+        <header>
+            <ul class="Logo">
+                <li class="l1" title="Kalibo, Aklan">
+                    <a href="https://nvc.edu.ph" target="_blank">
+                    <img src="old scripts/new old scripts/final-logo-nvc.png" 
+                    alt="Northwestern Visayan Colled
+                    ges">
+                    </a>
+                </li>
+            </ul>  
+        </header>
+        <div class="biggercont">
+            <h1>Enrollment Form</h1>
+        <div class="container">
+            <form action="processForm.php" method="post" id="formenroll" enctype="multipart/form-data">
+                <div class="form student_info" id="student_info">
+                    <h3>Student's Information</h3>
+                <table>
+                <tbody>
+                    <tr class="r r1">
+                    <td>
+                    <div class="yn">
+                        <label for="strand">Strand</label>
+                        <select name="strand" id="strand">
+                            <option value="HUMSS">HUMSS</option>
+                            <option value="STEM">STEM</option>
+                            <option value="GAS" selected >GAS</option>
+                            <option value="ABM">ABM</option>
+                            <option value="ICT">ICT</option>
+                            <option value="HE">HE</option>
+                        </select>
+                    </div>
+                    </td>
+                    <td>
+                    <div class="yn">
+                        <label for="yl">Grade Level</label>
+                        <select name="yl" id="yl">
+                            <option value="11" selected >11</option>
+                            <option value="12" >12</option>
+                        </select>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr class="r r2">
+                    <td>
+                        <label for="sem">Sem:</label>
+                        <select name="sem" id="sem">
+                            <option value="1" selected >1st</option>
+                            <option value="2">2nd</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="sy">S.Y.:</label>
+                        <input type="text" id="sy" name="sy" maxlength="9" required><br>
+                    </td>
+                    </tr>
+                    <tr class="r r2">
+                    <td>
+                    <div class="yn">
+                        <label for="stype">Student Type</label>
+                        <select name="stype" id="stype">
+                            <option value="old">Old Student</option>
+                            <option value="new" selected >New Student</option>
+                        </select> 
+                    </div>
+                    </td>
+                    <td>
+                        <label for="IDno"> School ID No.</label>
+                        <input type="text" id="IDno" name="IDno" required><br>
+                    </td>
+                    </tr>
+                    <tr class="r r3">
+                    <td>
+                        <label for="lrn">LRN</label>
+                        <input type="number" id="lrn" name="lrn" max="1000000000000" required>
+                    </td>
+                    <td>
+                        <label for="fbus">Facebook</label>
+                        <input type="text" id="fbus" name="fbus" required>
+                    </td>
+                    </tr>
+                    <tr class="r r4">
+                    <td>
+                        <label for="name">Student Name</label>
+                        <input type="text" id="name" name="name"  placeholder="ex. Dela Cruz, John Loyd Bonus" required>
+                    </td>
+                    <td>
+                    <div id="bday">
+                        <label for="month">Month</label>
+                        <select name="month" id="month">
+                            <option value="01">Jan</option>
+                            <option value="02" selected >Feb</option>
+                            <option value="03">Mar</option>
+                            <option value="04" >Apr</option>
+                            <option value="05">May</option>
+                            <option value="06">Jun</option>
+                            <option value="07">Jul</option>
+                            <option value="08">Aug</option>
+                            <option value="09">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                            </select> 
+                        <label for="day">Day</label>
+                        <input type="number" min="1" max="31" name="day" id="day">
+                        <label for="year">Year</label>
+                        <input type="number" min="2000" name="year" id="year">
+                    </div>
+                    </td>
+                    </tr>
+                    <tr class="r r5">
+                    <td>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="0" max="99" required>
+                    </td>
+                    <td>
+                    <label for="sex">Sex</label>
+                    <select id="sex" name="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    </td>
+                    </tr>
+                    <tr class="r r6">
+                    <td>
+                        <label for="num">Mobile No:</label>
+                        <input type="tel" id="num" name="num" required><br>
+                    </td>
+                    <td>
+                        <label for="address">Place of Birth:</label>
+                        <input type="text" id="address" name="address" required>
+                    </td>
+                    </tr>
+                    <tr class="r r7">
+                    <td>
+                        <label for="zipcode">Zip Code:</label>
+                        <input type="number" id="zipcode" name="zipcode">
+                    </td>
+                    <td>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    <tr class="r r8">
+                    <td>
+                    <div class="yn">
+                        <label for="4ps">4P's Beneficiary</label>
+                        <select name="4ps" id="4ps">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select><br>
+                    </div>
+                    </td>
+                    <td>
+                    <div class="yn">
+                        <label for="IPmem">IP Member</label>
+                        <select name="IPmem" id="IPmem">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select><br>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr class="r r9">
+                    <td>
+                        <label for="elementary">Elementary:</label>
+                        <input type="text" id="elementary" name="elementary" required>
+                    </td>
+                    <td>
+                        <label for="sy2" class="SY">S.Y.:</label>
+                        <input type="text" id="sy2" name="sy2" maxlength="9" required>
+                    </td>
+                    </tr>
+                    <tr class="r r10">
+                    <td>
+                        <label for="jhs">Junior High School:</label>
+                        <input type="text" id="jhs" name="jhs" required>
+                    </td>
+                    <td>
+                        <label for="sy3" class="SY">S.Y.:</label>
+                        <input type="text" id="sy3" name="sy3" maxlength="9" required>
+                    </td>
+                    </tr>
+                    <tr class="r r11">
+                    <td>
+                        <label for="shs">Senior High School:</label>
+                        <input type="text" id="shs" name="shs" required>
+                    </td>
+                    <td>
+                        <label for="sy4" class="SY">S.Y.:</label>
+                        <input type="text" id="sy4" name="sy4" maxlength="9" required>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+                </div>
+                <div class="form VacnF" id="VacnF">
+                    <h3>Vaccination Data</h3>
+                    <table id="vacsection">
+                    <tbody>
+                    <tr class="r r13">
+                    <td>         
+                        <div class="cb">
+                            <label for="vac">Vaccinated</label>
+                            <input type="checkbox" name="vac" id="vac">
+                            <br>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr class="r r14">
+                    <td>
+                        <div class="cb" id="vaccb">
+                            <label for="dose1">1st Dose</label>
+                            <input type="checkbox" name="dose1" id="dose1">
+                            <label for="dose2">2nd Dose</label>
+                            <input type="checkbox" name="dose2" id="dose2">
+                            <label for="booster">Booster</label>
+                            <input type="checkbox" name="booster" id="booster"> 
+                        </div>
+                    </td>
+                    <td>
+                        <label for="vacname">Vaccine</label>
+                        <input type="text" id="vacname" name="vacname">
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                        <h3>Parent's Information</h3>
+                    <table>
+                    <tbody>
+                    <tr class="r r15">
+                    <td>
+                        <label for="dad_name">Father's Name</label>
+                        <input type="text" id="dad_name" name="dad_name"  placeholder="ex. Dela Cruz, John Loyd Bonus">
+                    </td>
+                    <td>
+                        <label for="dad_job">Occupation</label>
+                        <input type="text" id="dad_job" name="dad_job">
+                    </td>
+                    </tr>
+                    <tr class="r r16">
+                    <td>
+                        <label for="dad_num">Mobile No:</label>
+                        <input type="tel" id="dad_num" name="dad_num"><br>
+                    </td>
+                    <td>
+                        <label for="dad_sal">Monthly Income</label>
+                        <input type="number" id="dad_sal" name="dad_sal" min="0">
+                    </td>
+                    </tr>
+                    <tr class="r r17">
+                    <td>
+                        <label for="mom_name">Mother's  Maiden Name</label>
+                        <input type="text" id="mom_name" name="mom_name"  placeholder="ex. Geronimo, Sarah Bernardo">
+                    </td>
+                    <td>
+                        <label for="mom_job">Occupation</label>
+                        <input type="text" id="mom_job" name="mom_job">
+                    </td>
+                    </tr>
+                    <tr class="r r18">
+                    <td>
+                        <label for="mom_num">Mobile No:</label>
+                        <input type="tel" id="mom_num" name="mom_num"><br>
+                    </td>
+                    <td>
+                        <label for="mom_sal">Monthly Income</label>
+                        <input type="number" id="mom_sal" name="mom_sal" min="0">
+                    </td>
+                    </tr>
+                    <tr class="r r19">
+                    <td>
+                        <button type="submit" id="submit_btn">Submit</button>
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+    </body>
+</html>

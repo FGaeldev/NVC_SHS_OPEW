@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enrollment_form.css">
+    <title>NVC Enroll</title>
+</head>
+<body>
+    <div class="docs" id="docs">
+        <form action="" method="post">
+            <h3>Required Documents</h3>
+            <label for="f138">Gr. 10 Report Card (form 138):</label> 
+            <input type="file" name="f138" id="f138" required accept=".png, .jpg, .jpeg, .img">
+            <p class="limits">
+                File size must not exceed 5mb.
+            </p>
+            <label for="gmc">Good Moral Certificate:</label> 
+            <input type="file" name="gmc" id="gmc" required accept=".png, .jpg, .jpeg, .img">
+            <p class="limits">
+                File size must not exceed 5mb.
+            </p>
+            <label for="Idphoto">Id Photo (2x2):</label> 
+            <input type="file" name="Idphoto" id="Idphoto" required accept=".png, .jpg, .jpeg, .img">
+            <p class="limits">
+                File size must not exceed 5mb.
+            </p>
+            <label for="PSA">PSA Certificate of Live Birth:</label> 
+            <input type="file" name="PSA" id="PSA" required accept=".png, .jpg, .jpeg, .img">
+            <p class="limits">
+                File size must not exceed 5mb.
+            </p>
+            <h4>If Transferee</h4>
+            <label for="f137">Permanent Record (form 137):</label> 
+            <input type="file" name="f137" id="f137" accept=".png, .jpg, .jpeg, .img">
+            <p class="limits">
+                File size must not exceed 5mb.
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

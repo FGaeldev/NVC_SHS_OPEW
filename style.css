@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul.Logo{
+      
+    background-color: #bc3329;
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+}
+ ul.Logo li{
+    display: inline-block;
+    text-align:left;
+    vertical-align: middle;
+}
+ul.Logo li a img{
+    height: 75px;
+}
+table{
+    border:solid 1px ;
+}
+table thead{
+    border:solid 1px;
+}
+table tbody td{
+    text-align: center;
+    border:solid 1px;
+}
+table th{
+    border: solid 1px;
+}
+table tbody td a{
+    text-decoration: none;
+    color: black;
+    margin: 5 5;
+    border: solid 1px;
+}
+table tbody td a.accept{
+    background-color: blue;
+}
+table tbody td a.deny{
+    background-color: red;
+}

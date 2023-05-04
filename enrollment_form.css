@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+ul.Logo{
+    min-width: 375px;
+    background-color: #bc3329;
+    list-style: none;
+    width: 100%;
+    text-align:left;
+    vertical-align: middle;
+}
+ul.Logo li a img{
+    height: 75px;
+}
+.docs{
+    display: block;
+    visibility: visible; 
+}
+.student_info{
+    display: block;
+    visibility: visible;
+}
+.VacnF{
+    display:none ;
+    visibility: hidden;
+}
+h2{
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: white;
+}
+label{
+    display: block;
+    margin: 0;
+    margin-bottom: 1em;
+}
+input{
+    background: transparent;
+    width: max-content;
+    border-bottom: solid 1px black;
+}
+button{
+    border: solid 1px maroon;
+    border-radius: 3px;
+    font-size: large;
+}
+.container{
+    vertical-align: middle;
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: 2em auto;
+    padding: 1em 2em;
+    border: solid 1px #800000; 
+    border-radius: 6px;
+    min-width: 20em;
+    max-width: 75%;
+}
+.docs{
+    margin-top: 5em;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+}
+.docs form{
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 2px maroon;
+    border-radius: 6px; 
+    margin-bottom: 1em;
+    width: min-content;
+}
+.docs input, .docs label, .docs p{
+    margin-bottom: 0;
+    margin-left: 1em;
+}
+.container form{
+    width:min-content ;
+    margin-right: auto;
+    margin-left: auto;
+}
+p.limits{
+    font-size: small;
+}
+#ln1 label{
+    display: inline-block;
+}
+#ln4 :first-child{
+    margin-top: 1em;
+}
+input[type="text"], input[type="email"]{
+    width: 19em;
+}
+input[type="radio"]+label{
+    display: inline-block;
+    margin: .5em;
+}
+input[type="file"]{
+   width: auto;
+}
+input[type="checkbox"]{
+    display: inline-block;
+}
+div.yn label{
+    display: inline-block;
+}
+div.cb label{
+    display: inline-block;
+}
+div#ln2 div.yn label{
+    margin:0 ;
+    display: inline-block;
+}
+div#ln2 div.yn select{
+    margin-bottom: 1em;
+}
+div#ln1 input[type="text"]{
+    width: 7em;
+}
